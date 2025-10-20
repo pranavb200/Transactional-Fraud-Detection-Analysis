@@ -27,13 +27,9 @@ The challenge is to develop an automated analytical system that can distinguish 
 | **Deployment**                | Render (Streamlit Cloud Hosting)                         |
 
 🧱 Project Structure
-
 Transactional_Fraud_Detection_Analysis/
-
 │
-
 ├── app/
-
 │   ├── streamlit_app.py              # Main Streamlit dashboard app
 │   ├── requirements.txt              # Libraries required for deployment
 │   └── Procfile                      # Render app startup file
