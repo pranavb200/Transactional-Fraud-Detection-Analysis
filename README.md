@@ -1,4 +1,5 @@
 🕵️‍♂️ Transactional Fraud Detection Analysis
+
 📅 Project: Month 1 — Data Analytics & Machine Learning Capstone
 
 Objective: Detect fraudulent financial transactions using data analysis and machine learning.
@@ -51,46 +52,34 @@ Transactional_Fraud_Detection_Analysis/
 └── .gitignore
 
 🚀 Project Development Phases
+
 🗓️ Week 1 — Data Preparation & Exploration
 
 Load data from creditcard.csv.
-
 Perform initial profiling using .info() and .describe().
-
 Handle missing values and data inconsistencies.
-
 Analyze class imbalance (fraud vs. non-fraud).
 
 🗓️ Week 2 — Exploratory Data Analysis (EDA)
 
 Univariate and bivariate analysis of transaction features.
-
 Visualize distribution of transaction amounts, time, and frequency using Matplotlib, Seaborn, Plotly.
-
 Identify correlations and anomalies linked to fraud.
-
 Save processed data as eda_ready_data.csv.
 
 🗓️ Week 3 — Feature Engineering & Baseline Modeling
 
 Create new features (e.g., transaction frequency, time since last transaction).
-
 Split data into train-test sets.
-
 Build a baseline Logistic Regression model with scaling and pipeline.
-
 Evaluate model using Precision, Recall, F1-score, ROC-AUC.
-
 Save trained model as fraud_pipeline_v1.joblib.
 
 🗓️ Week 4 — Reporting & Streamlit Dashboard
 
 Develop an interactive Streamlit dashboard (streamlit_app.py).
-
 Display fraud vs. non-fraud distribution, transaction patterns, and key indicators.
-
 Integrate model predictions for test samples.
-
 Deploy the app on Render for live access.
 
 📂 Dataset Sources
@@ -102,51 +91,46 @@ Deploy the app on Render for live access.
 
 
 💻 How to Run Locally
+
 1️⃣ Clone the repository
+
 git clone https://github.com/<your-username>/Transactional-Fraud-Detection-Analysis.git
 cd Transactional-Fraud-Detection-Analysis
 
 2️⃣ Create and activate a virtual environment
+
 python -m venv venv
+
 venv\Scripts\activate   # For Windows
 # or
 source venv/bin/activate  # For Mac/Linux
 
 3️⃣ Install dependencies
+
 pip install -r app/requirements.txt
 
 4️⃣ Run the Streamlit app
+
 streamlit run app/streamlit_app.py
 
 ☁️ Deployment on Render
 
-Push your project to GitHub.
-
+Push your project to GitHub
 Go to Render
 .
-
 Create a New Web Service.
-
 Connect your GitHub repo.
-
 Select the branch and set these options:
-
 Build Command: pip install -r app/requirements.txt
-
 Start Command: streamlit run app/streamlit_app.py --server.port 10000
-
 Click Deploy.
-
 Render will automatically build and host your Streamlit dashboard online.
 
 🧾 Key Insights
 
 Fraudulent transactions tend to have smaller amounts but higher frequency.
-
 Certain transaction times (e.g., late night) show higher fraud likelihood.
-
 The dataset is highly imbalanced (frauds ≈ 0.17% of total).
-
 Logistic Regression with class weights performs reasonably well as a baseline.
 
 📊 Model Evaluation Summary
@@ -162,16 +146,12 @@ Logistic Regression with class weights performs reasonably well as a baseline.
 🧰 Future Enhancements
 
 Implement SMOTE or ADASYN to handle class imbalance.
-
 Experiment with advanced models like Random Forest, XGBoost, or Neural Networks.
-
 Add a real-time API layer for live fraud detection.
-
 Integrate Tableau/Power BI dashboards for executive reporting.
 
 👨‍💻 Author
 
 Pranav B
-Data Analyst | Machine Learning Enthusiast
 📧 pranavbgowda0@gmail.com
 📍 India
