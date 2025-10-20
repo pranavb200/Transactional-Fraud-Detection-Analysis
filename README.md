@@ -1,5 +1,4 @@
 🕵️‍♂️ Transactional Fraud Detection Analysis
-
 📅 Project: Month 1 — Data Analytics & Machine Learning Capstone
 
 Objective: Detect fraudulent financial transactions using data analysis and machine learning.
@@ -8,6 +7,7 @@ Objective: Detect fraudulent financial transactions using data analysis and mach
 
 Financial fraud is a major concern for banks and e-commerce companies, leading to significant financial losses and reputational damage.
 This project aims to analyze historical transaction data to uncover fraudulent patterns and build a baseline fraud detection model using machine learning.
+
 By leveraging EDA, feature engineering, and classification modeling, the project identifies suspicious transactions and provides visual insights through a Streamlit dashboard.
 
 🧩 Problem Statement
@@ -16,7 +16,6 @@ Financial institutions handle millions of transactions daily, making it difficul
 The challenge is to develop an automated analytical system that can distinguish between legitimate and fraudulent transactions accurately and efficiently.
 
 ⚙️ Tech Stack Used
-
 | Category                      | Tools & Technologies                                     |
 | ----------------------------- | -------------------------------------------------------- |
 | **Programming Language**      | Python                                                   |
@@ -52,38 +51,49 @@ Transactional_Fraud_Detection_Analysis/
 └── .gitignore
 
 🚀 Project Development Phases
-
 🗓️ Week 1 — Data Preparation & Exploration
 
 Load data from creditcard.csv.
+
 Perform initial profiling using .info() and .describe().
+
 Handle missing values and data inconsistencies.
+
 Analyze class imbalance (fraud vs. non-fraud).
 
 🗓️ Week 2 — Exploratory Data Analysis (EDA)
 
 Univariate and bivariate analysis of transaction features.
+
 Visualize distribution of transaction amounts, time, and frequency using Matplotlib, Seaborn, Plotly.
+
 Identify correlations and anomalies linked to fraud.
+
 Save processed data as eda_ready_data.csv.
 
 🗓️ Week 3 — Feature Engineering & Baseline Modeling
 
 Create new features (e.g., transaction frequency, time since last transaction).
+
 Split data into train-test sets.
+
 Build a baseline Logistic Regression model with scaling and pipeline.
+
 Evaluate model using Precision, Recall, F1-score, ROC-AUC.
+
 Save trained model as fraud_pipeline_v1.joblib.
 
 🗓️ Week 4 — Reporting & Streamlit Dashboard
 
 Develop an interactive Streamlit dashboard (streamlit_app.py).
+
 Display fraud vs. non-fraud distribution, transaction patterns, and key indicators.
+
 Integrate model predictions for test samples.
+
 Deploy the app on Render for live access.
 
 📂 Dataset Sources
-
 | File                   | Description                           | Link                                                                                           |
 | ---------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | `creditcard.csv`       | Original transaction dataset          | [Download](https://drive.google.com/file/d/18F13C4FhUGn22ZwvuN0w1NYzEWxznYj-/view?usp=sharing) |
@@ -93,7 +103,7 @@ Deploy the app on Render for live access.
 
 💻 How to Run Locally
 1️⃣ Clone the repository
-git clone https://github.com/pranavb200/Transactional-Fraud-Detection-Analysis.git
+git clone https://github.com/<your-username>/Transactional-Fraud-Detection-Analysis.git
 cd Transactional-Fraud-Detection-Analysis
 
 2️⃣ Create and activate a virtual environment
@@ -106,15 +116,19 @@ source venv/bin/activate  # For Mac/Linux
 pip install -r app/requirements.txt
 
 4️⃣ Run the Streamlit app
-streamlit run app/streamlit_app.py  (inside venv)
+streamlit run app/streamlit_app.py
 
 ☁️ Deployment on Render
 
 Push your project to GitHub.
+
 Go to Render
 .
+
 Create a New Web Service.
+
 Connect your GitHub repo.
+
 Select the branch and set these options:
 
 Build Command: pip install -r app/requirements.txt
@@ -143,7 +157,6 @@ Logistic Regression with class weights performs reasonably well as a baseline.
 | Recall    | 0.91            |
 | F1-Score  | 0.87            |
 | ROC-AUC   | 0.97            |
-
 (Exact metrics may vary depending on dataset split and preprocessing.)
 
 🧰 Future Enhancements
@@ -159,9 +172,6 @@ Integrate Tableau/Power BI dashboards for executive reporting.
 👨‍💻 Author
 
 Pranav B
-
 Data Analyst | Machine Learning Enthusiast
-
 📧 pranavbgowda0@gmail.com
-
 📍 India
