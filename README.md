@@ -175,6 +175,6 @@ Render will automatically build and host your Streamlit dashboard online.
 
 ## 👨‍💻 Author
 **Pranav B**  
-Data Analyst | Machine Learning Enthusiast  
+  
 📧 pranavbgowda0@gmail.com  
 📍 India  
