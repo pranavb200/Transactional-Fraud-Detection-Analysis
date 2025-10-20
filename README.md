@@ -7,15 +7,12 @@ Objective: Detect fraudulent financial transactions using data analysis and mach
 🧠 Project Overview
 
 Financial fraud is a major concern for banks and e-commerce companies, leading to significant financial losses and reputational damage.
-
 This project aims to analyze historical transaction data to uncover fraudulent patterns and build a baseline fraud detection model using machine learning.
-
 By leveraging EDA, feature engineering, and classification modeling, the project identifies suspicious transactions and provides visual insights through a Streamlit dashboard.
 
 🧩 Problem Statement
 
 Financial institutions handle millions of transactions daily, making it difficult to manually detect fraudulent activities.
-
 The challenge is to develop an automated analytical system that can distinguish between legitimate and fraudulent transactions accurately and efficiently.
 
 ⚙️ Tech Stack Used
@@ -59,43 +56,30 @@ Transactional_Fraud_Detection_Analysis/
 🗓️ Week 1 — Data Preparation & Exploration
 
 Load data from creditcard.csv.
-
 Perform initial profiling using .info() and .describe().
-
 Handle missing values and data inconsistencies.
-
 Analyze class imbalance (fraud vs. non-fraud).
 
 🗓️ Week 2 — Exploratory Data Analysis (EDA)
 
 Univariate and bivariate analysis of transaction features.
-
 Visualize distribution of transaction amounts, time, and frequency using Matplotlib, Seaborn, Plotly.
-
 Identify correlations and anomalies linked to fraud.
-
 Save processed data as eda_ready_data.csv.
 
 🗓️ Week 3 — Feature Engineering & Baseline Modeling
 
 Create new features (e.g., transaction frequency, time since last transaction).
-
 Split data into train-test sets.
-
 Build a baseline Logistic Regression model with scaling and pipeline.
-
 Evaluate model using Precision, Recall, F1-score, ROC-AUC.
-
 Save trained model as fraud_pipeline_v1.joblib.
 
 🗓️ Week 4 — Reporting & Streamlit Dashboard
 
 Develop an interactive Streamlit dashboard (streamlit_app.py).
-
 Display fraud vs. non-fraud distribution, transaction patterns, and key indicators.
-
 Integrate model predictions for test samples.
-
 Deploy the app on Render for live access.
 
 📂 Dataset Sources
@@ -108,15 +92,11 @@ Deploy the app on Render for live access.
 
 
 💻 How to Run Locally
-
 1️⃣ Clone the repository
-
 git clone https://github.com/pranavb200/Transactional-Fraud-Detection-Analysis.git
-
 cd Transactional-Fraud-Detection-Analysis
 
 2️⃣ Create and activate a virtual environment
-
 python -m venv venv
 venv\Scripts\activate   # For Windows
 # or
@@ -179,6 +159,9 @@ Integrate Tableau/Power BI dashboards for executive reporting.
 👨‍💻 Author
 
 Pranav B
+
 Data Analyst | Machine Learning Enthusiast
+
 📧 pranavbgowda0@gmail.com
+
 📍 India
