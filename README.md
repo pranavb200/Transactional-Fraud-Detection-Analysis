@@ -89,48 +89,52 @@ Deploy the app on Render for live access.
 | `clean_creditcard.csv` | Cleaned dataset (after preprocessing) | [Download](https://drive.google.com/file/d/1VKx5NhSRvKhZOojgAbfYmgSASg2N0NpJ/view?usp=sharing) |
 | `eda_ready_data.csv`   | Dataset prepared for visualizations   | [Download](https://drive.google.com/file/d/1nFSSB-AkT_DpxRK4hKi1Gro0BSq7RtNw/view?usp=sharing) |
 
-
 💻 How to Run Locally
-
 1️⃣ Clone the repository
-
 git clone https://github.com/<your-username>/Transactional-Fraud-Detection-Analysis.git
 cd Transactional-Fraud-Detection-Analysis
 
 2️⃣ Create and activate a virtual environment
-
 python -m venv venv
-
 venv\Scripts\activate   # For Windows
 # or
 source venv/bin/activate  # For Mac/Linux
 
 3️⃣ Install dependencies
-
 pip install -r app/requirements.txt
 
 4️⃣ Run the Streamlit app
-
 streamlit run app/streamlit_app.py
 
 ☁️ Deployment on Render
 
-Push your project to GitHub
+Push your project to GitHub.
+
 Go to Render
 .
+
 Create a New Web Service.
+
 Connect your GitHub repo.
+
 Select the branch and set these options:
+
 Build Command: pip install -r app/requirements.txt
+
 Start Command: streamlit run app/streamlit_app.py --server.port 10000
+
 Click Deploy.
+
 Render will automatically build and host your Streamlit dashboard online.
 
 🧾 Key Insights
 
 Fraudulent transactions tend to have smaller amounts but higher frequency.
+
 Certain transaction times (e.g., late night) show higher fraud likelihood.
+
 The dataset is highly imbalanced (frauds ≈ 0.17% of total).
+
 Logistic Regression with class weights performs reasonably well as a baseline.
 
 📊 Model Evaluation Summary
@@ -141,17 +145,22 @@ Logistic Regression with class weights performs reasonably well as a baseline.
 | Recall    | 0.91            |
 | F1-Score  | 0.87            |
 | ROC-AUC   | 0.97            |
+
 (Exact metrics may vary depending on dataset split and preprocessing.)
 
 🧰 Future Enhancements
 
 Implement SMOTE or ADASYN to handle class imbalance.
+
 Experiment with advanced models like Random Forest, XGBoost, or Neural Networks.
+
 Add a real-time API layer for live fraud detection.
+
 Integrate Tableau/Power BI dashboards for executive reporting.
 
 👨‍💻 Author
 
 Pranav B
+
 📧 pranavbgowda0@gmail.com
 📍 India
